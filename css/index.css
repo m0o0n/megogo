@@ -1,0 +1,267 @@
+.wrapper {
+    position: relative;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+
+.header {
+    position: fixed;
+    z-index: 999;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+    background-image: url('../assets/hero.webp');
+    background-color: var(--clr-dark);
+    background-size: cover;
+}
+
+.hero p {
+    padding: 0 35px 0 50px;
+    opacity: 0.8
+}
+
+.hero h1 {
+    padding: 0 25px 0 50px;
+}
+
+.hero__arrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 25px;
+    cursor: pointer;
+}
+
+.info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100vh;
+    background-color: var(--clr-dark);
+    gap: 30px;
+}
+
+.info__title {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0 50px;
+    gap: 15px;
+
+}
+
+.info__title p {
+    opacity: .8;
+}
+
+.info .info__background {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+}
+
+.info .info__background .background {
+    width: calc(100%-70px);
+    height: 100%;
+    margin: 0 35px;
+    background-image: url('../assets/iPhone.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.info .info__background .bg_gradient {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.promo {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    font-family: 'sf';
+    border: 8px solid var(--clr-tiffany);
+    background-image: url('../assets/movies.webp');
+    background-color: var(--clr-dark);
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.promo::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-dark);
+    opacity: .5;
+}
+
+.promo .promo__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 36px 0 70px 50px;
+    box-sizing: border-box;
+}
+
+.promo .promo__title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.promo .promo__title span {
+    letter-spacing: 0.5px;
+}
+
+.promo .promo__title h3 {
+    letter-spacing: 1px;
+}
+
+.promo .promo__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.promo .promo__content p {
+    margin-right: 66px;
+    letter-spacing: 0.5px;
+}
+
+.promo .promo__action {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.promo .promo__action-button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.promo .promo__action-button span {
+    font-size: 12px;
+    font-family: 'sf';
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.83px;
+    color: var(--clr-primary-white);
+    opacity: .6;
+}
+
+.promo__action>span {
+    font-size: 11px;
+    font-family: 'sf';
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 1.3px;
+    color: var(--clr-secondary-white);
+}
+
+.partners {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 101px;
+    padding: 92px 0 132px 0px;
+    background: var(--clr-dark);
+}
+
+.partners div {
+    scroll-snap-align: start end;
+}
+
+.partners .partners__about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.partners .partners__about-title {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 50px;
+}
+
+.partners .partners__about-title p {
+    opacity: .8;
+}
+
+.partners .partners__about-logo {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+}
+
+.partners .partners__about-logo .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-image: url('../assets/partners.webp');
+    background-size: contain;
+    background-position: bottom;
+}
+
+.partners .partners__about-logo .bg_gradient {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.partners .partenrs__connect {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 50px;
+}
+
+.partners .partenrs__connect-benefits {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.partners .connect-benefits__item {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin-bottom: 40px;
+}
+
+.partners .connect-benefits__item h4 {
+    line-height: 24px;
+}
+
+.partners .connect-benefits__item span {
+    line-height: 18px;
+}
