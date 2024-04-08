@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/full-page-scroll.min.css" />
+    <script src="./js/full-page-scroll.min.js"></script>
 </head>
 
 <body>
-    <div class="wrapper">
+    <div id="main" class="wrapper scroll-container">
         <nav class="header">
             <svg width="12" height="16" viewBox="0 0 16 12">
                 <path
@@ -25,6 +27,8 @@
                     fill="white" />
             </svg>
         </nav>
+
+
         <section class="section hero">
             <h1 class="text-xl">Дивіться ТБ та кіно без реклами в єдиній передплаті</h1>
             <p class="text-sm">Популярні телеканали та величезна бібліотека фільмів, серіалів, мультфільмів, трансляцій
@@ -130,7 +134,17 @@
                 <button class="primary_button">Підключити</button>
             </div>
         </section>
+
+
     </div>
+    <script type="text/javascript">
+        new fullScroll({
+            mainElement: "main",
+            displayDots: false,
+            animateTime: 0.7,
+            animateFunction: "ease",
+        });
+    </script>
 </body>
 
 </html>

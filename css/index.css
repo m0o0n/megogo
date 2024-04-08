@@ -1,11 +1,6 @@
 .wrapper {
     position: relative;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
-    scroll-behavior: smooth;
 }
-
 
 .header {
     position: fixed;
@@ -187,6 +182,8 @@
     gap: 101px;
     padding: 92px 0 132px 0px;
     background: var(--clr-dark);
+    overflow-y: auto;
+    box-sizing: border-box;
 }
 
 .partners div {

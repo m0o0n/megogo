@@ -80,10 +80,6 @@ h1, h2, h3, h4, p {
     background: linear-gradient(180.00deg, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.83) 100%);
 }
 
-.section {
-    scroll-snap-align: start;
-}
-
 .primary_button {
     display: flex;
     justify-content: center;
